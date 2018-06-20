@@ -21,8 +21,8 @@ public class testCases {
 	public void userStory2() {
 		int result;
 		
-		result = sc.userStory2(5, 3);
-		assertEquals(8, result);
+		result = sc.userStory2(10, 3);
+		assertEquals(-1, result);
 	}
 	
 	
