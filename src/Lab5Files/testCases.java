@@ -10,12 +10,19 @@ public class testCases {
 	public void userStory1() {
 		int firstThrow;
 		int secondThrow;
+		String result;
 		
 		firstThrow = 2;
 		secondThrow = 3;
 		
-		assertEquals(2, firstThrow);
-		assertEquals(3, secondThrow);
+		result = ("[" + firstThrow + ", " + secondThrow + "]");
+		
+		assertEquals("[2, 3]", result);
+	}
+	
+	@Test
+	public void userStory2() {
+		
 	}
 
 }
