@@ -7,8 +7,15 @@ import org.junit.Test;
 public class testCases {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void userStory1() {
+		int firstThrow;
+		int secondThrow;
+		
+		firstThrow = 2;
+		secondThrow = 3;
+		
+		assertEquals(2, firstThrow);
+		assertEquals(3, secondThrow);
 	}
 
 }
