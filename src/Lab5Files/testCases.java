@@ -20,12 +20,11 @@ public class testCases {
 	@Test
 	public void userStory2() {
 		int result;
-		int firstThrow = 5;
-		int secondThrow = 3;
 		
-		result = firstThrow + secondThrow;
+		result = sc.userStory2(5, 3);
 		assertEquals(8, result);
 	}
+	
 	
 
 }
