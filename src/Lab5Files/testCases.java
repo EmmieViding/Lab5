@@ -22,9 +22,11 @@ public class testCases {
 	@Test
 	public void userStory2() {
 		int result;
+		int firstThrow = 2;
+		int secondThrow = 4;
 		
-		result = sc.userStory2(5, 3);
-		assertEquals(8, result);
+		result = firstThrow + secondThrow;
+		assertEquals(6, result);
 	}
 	
 	

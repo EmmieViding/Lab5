@@ -1,21 +1,6 @@
 package Lab5Files;
 
 public class sourceCode {
-
-	
-	public int userStory2(int firstThrow, int secondThrow)
-	{
-		int result;
-		
-		result = firstThrow + secondThrow;
-		
-		if(result > 10)
-		{
-			result = -1;
-		}
-		
-		return result;
-	}
 	
 	public String userStory3(int []gameArray)
 	{
