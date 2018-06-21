@@ -10,11 +10,13 @@ public class testCases {
 
 	@Test
 	public void userStory1() {
-		String result;
-
-		result = sc.userStory1(2,3);
+		String result = "";
+		int firstThrow = 2;
+		int secondThrow = 4;
 		
-		assertEquals("[2, 3]", result);
+		result = ("[" + firstThrow + ", " + secondThrow + "]");
+		
+		assertEquals("[2, 4]", result);
 	}
 	
 	@Test
