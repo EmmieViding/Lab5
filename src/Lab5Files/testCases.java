@@ -106,7 +106,12 @@ public class testCases {
 		
 		while(i < gameArray.length - 1)
 		{
-			if((gameArray[i] + gameArray[i+1]) == 10 && gameArray[i] != 10 && gameArray[i+1] != 0)
+			
+			if(gameArray[i] == 10)
+			{
+				result += gameArray[i] + gameArray[i+2] + gameArray[i+3];
+			}
+			else if((gameArray[i] + gameArray[i+1]) == 10 && gameArray[i] != 10 && gameArray[i+1] != 0)
 			{
 				result += (gameArray[i] + gameArray[i+1] + gameArray[i+2]);
 			}
@@ -118,7 +123,7 @@ public class testCases {
 			i = i+2;
 		}
 		
-		assertEquals(80, result);
+		assertEquals(90, result);
 	}
 	
 
