@@ -126,5 +126,36 @@ public class testCases {
 		assertEquals(90, result);
 	}
 	
+	@Test
+	public void userStory8() {
+		int[] gameArray = {10, 0, 10, 0, 4, 5, 6, 2, 10, 0, 1, 9, 5, 5, 0, 0, 2, 8, 0, 1};
+		int result = 0;
+		int i = 0;
+		
+		while(i < gameArray.length - 1)
+		{
+			if(gameArray[i] == 10)
+			{
+				if(gameArray[i+2] == 10)
+				{
+					result += gameArray[i] + gameArray[i+2] + gameArray[i+4];
+				}
+				else
+				{
+					result += gameArray[i] + gameArray[i+2] + gameArray[i+3];
+				}
+				
+			}
+			else
+			{
+				result += gameArray[i] + gameArray[i+1];
+			}
+			
+			i = i+2;
+		}
+		
+		assertEquals(111, result);
+	}
+	
 
 }
