@@ -21,10 +21,28 @@ public class testCases {
 	public void userStory2() {
 		int result;
 		
-		result = sc.userStory2(10, 3);
-		assertEquals(-1, result);
+		result = sc.userStory2(5, 3);
+		assertEquals(8, result);
 	}
 	
+	
+	@Test
+	public void userStory3() {
+		int[] gameArray = {0, 1, 2, 3, 4, 5, 6, 2, 0, 10, 1, 9, 5, 5, 0, 0, 2, 8, 0, 1};
+		String result = "";
+		int i = 0;
+		
+		
+		System.out.println(result);
+		while(i < gameArray.length - 1);
+		{
+			result += ("[" + gameArray[i] + "," + gameArray[i+1] + "]" );
+			i++;
+		}
+		
+		
+		assertEquals("[0,1][2,3][4,5][6,2][0,10][1,9][5,5][0,0][2,8][0,1]", result);
+	}
 	
 
 }
