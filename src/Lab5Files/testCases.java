@@ -63,16 +63,43 @@ public class testCases {
 				stringResult = "Strike";
 				result += gameArray[i] + gameArray[i+2] + gameArray[i+3];
 			}
+			else
+			{
+				result += gameArray[i] + gameArray[i+1];
+			}
 			
 			i = i+2;
 		}
 		
-		assertEquals(20, result);
+		assertEquals(74, result);
 		assertEquals("Strike", stringResult);
 	}
 	
 	@Test
 	public void userStory6() {
+		int[] gameArray = {9, 1, 2, 3, 4, 5, 6, 2, 10, 0, 1, 9, 5, 5, 0, 0, 2, 8, 0, 1};
+		int result = 0;
+		int i = 0;
+		
+		while(i < gameArray.length - 1)
+		{
+			if((gameArray[i] + gameArray[i+1]) == 10 && gameArray[i] != 10 && gameArray[i+1] != 0)
+			{
+				result += (gameArray[i] + gameArray[i+1] + gameArray[i+2]);
+			}
+			else
+			{
+				result += gameArray[i] + gameArray[i+1];
+			}
+			
+			i = i+2;
+		}
+		
+		assertEquals(80, result);
+	}
+	
+	@Test
+	public void userStory7() {
 		int[] gameArray = {9, 1, 2, 3, 4, 5, 6, 2, 10, 0, 1, 9, 5, 5, 0, 0, 2, 8, 0, 1};
 		int result = 0;
 		int i = 0;
