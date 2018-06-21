@@ -63,14 +63,12 @@ public class testCases {
 	public void userStory5() {
 		int[] gameArray = {0, 1, 2, 3, 4, 5, 6, 2, 10, 0, 1, 9, 5, 5, 0, 0, 2, 8, 0, 1};
 		int result = 0;
-		String stringResult = "";
 		int i = 0;
 		
 		while(i < gameArray.length - 1)
 		{
 			if(gameArray[i] == 10)
 			{
-				stringResult = "Strike";
 				result += gameArray[i] + gameArray[i+2] + gameArray[i+3];
 			}
 			else
@@ -82,7 +80,6 @@ public class testCases {
 		}
 		
 		assertEquals(74, result);
-		assertEquals("Strike", stringResult);
 	}
 	
 	@Test
